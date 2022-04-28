@@ -1,1 +1,1 @@
-C:\Users\suo24\anaconda3\Scripts\activate.bat MA
+%userprofile%\anaconda3\Scripts\activate.bat MA
