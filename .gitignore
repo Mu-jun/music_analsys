@@ -2,6 +2,9 @@ output/
 cqt.npz
 Tears_of_a_witch_SFA(Audio).mp3
 Tears_of_a_witch_SFA.wav
+*.mp3
+*.mid
+*.wav
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
