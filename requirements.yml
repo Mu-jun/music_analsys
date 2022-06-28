@@ -141,6 +141,7 @@ dependencies:
     - scikit-learn==1.0.2
     - scipy==1.8.0
     - sortedcontainers==2.4.0
+    - sounddevice==0.4.4
     - soundfile==0.10.3.post1
     - tensorboard==2.8.0
     - tensorboard-data-server==0.6.1
@@ -154,4 +155,4 @@ dependencies:
     - werkzeug==2.1.2
     - wrapt==1.14.1
     - zipp==3.8.0
-prefix: C:\Users\suo24\anaconda3\envs\MA
+prefix: C:\Users\AI_server\miniconda3\envs\MA
