@@ -1,5 +1,5 @@
 import numpy as np
-import pretty_midi
+import pretty_midi_fluidsynth as pmf
 
 def piano_roll_to_pretty_midi(piano_roll, fs=100, program=0):
     '''Convert a Piano Roll array into a PrettyMidi object
@@ -20,8 +20,8 @@ def piano_roll_to_pretty_midi(piano_roll, fs=100, program=0):
         the piano roll.
     '''
     notes, frames = piano_roll.shape
-    pm = pretty_midi.PrettyMIDI()
-    instrument = pretty_midi.Instrument(program=program)
+    pm = pmf.PrettyMIDI()
+    instrument = pmf.Instrument(program=program)
 
     # pad 1 column of zeros so we can acknowledge inital and ending events
     piano_roll = np.pad(piano_roll, [(0, 0), (1, 1)], 'constant')
@@ -42,7 +42,7 @@ def piano_roll_to_pretty_midi(piano_roll, fs=100, program=0):
                 note_on_time[note] = time
                 prev_velocities[note] = velocity
         else:
-            pm_note = pretty_midi.Note(
+            pm_note = pmf.Note(
                 velocity=prev_velocities[note],
                 pitch=note,
                 start=note_on_time[note],
