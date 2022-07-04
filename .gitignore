@@ -5,6 +5,7 @@ Tears_of_a_witch_SFA.wav
 *.mp3
 *.mid
 *.wav
+gen_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
